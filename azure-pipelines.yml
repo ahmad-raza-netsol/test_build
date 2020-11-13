@@ -23,6 +23,7 @@ steps:
     goals: 'package'
 - task: CopyFiles@2
   inputs:
+    contents: 'maven_status/**'
     targetFolder: '$(Build.ArtifactStagingDirectory)'    
 
 - task: PublishBuildArtifacts@1    
